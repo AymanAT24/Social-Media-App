@@ -1,0 +1,90 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, black, #5f0707);
+
+  .card {
+    display: flex;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    min-height: 600px;
+    box-shadow: 0px 0px 35px 0px #fcfafab0;
+    overflow: hidden;
+    .left {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      gap: 2rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(160, 11, 11, 0.45)),
+        url("https://images.pexels.com/photos/447329/pexels-photo-447329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+          center;
+      background-size: cover;
+      padding: 2rem;
+      color: #fff;
+      h1 {
+        font-size: 80px;
+        line-height: 100px;
+      }
+      p {
+      }
+      span {
+        font-size: 14px;
+      }
+      button {
+        width: 50%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: #5f0707;
+        border: none;
+        box-shadow: 0px 0px 14px 0px black;
+        cursor: pointer;
+        transition: 0.5s;
+        font-weight: bold;
+      }
+      button:hover {
+        color: #fff;
+        background: #5f0707;
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      gap: 2rem;
+      justify-content: center;
+      h1 {
+        color: #5f0707;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          outline: none;
+          padding: 20px 10px;
+        }
+        button {
+          width: 50%;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          color: #fff;
+          background: #5f0707;
+          border: none;
+          box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.637);
+          cursor: pointer;
+          transition: 0.5s;
+          font-weight: bold;
+        }
+        button:hover {
+        }
+      }
+    }
+  }
+}
