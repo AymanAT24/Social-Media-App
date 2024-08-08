@@ -1,21 +1,17 @@
 import "./App.css";
 import Navbar from "./layout/Navbar/Navbar";
-import LeftBar from "./layout/LeftBar/LeftBar";
-import RightBar from "./layout/RightBar/RightBar";
 import Login from "./pages/Login/Login";
-import Register from "./pages/Register/Register";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Profile from "./pages/Profile/Profile";
+import SideBar from "./layout/SideBar/SideBar";
 function App() {
   const Layout = () => {
     return (
       <div>
         <Navbar />
         <div style={{ display: "flex" }}>
-          <LeftBar />
+          <SideBar />
           <Outlet />
-          <RightBar />
         </div>
       </div>
     );
@@ -30,19 +26,11 @@ function App() {
           path: "/",
           element: <Home />,
         },
-        {
-          path: "/profile/:id",
-          element: <Profile />,
-        },
       ],
     },
     {
       path: "/login",
       element: <Login />,
-    },
-    {
-      path: "/register",
-      element: <Register />,
     },
   ]);
 
